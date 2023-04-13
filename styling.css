@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  .menu {
+    float: left;
+    width: 20%;
+  }
+  .menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #051930;
+  }
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .right {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+  }
+  
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 100%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
